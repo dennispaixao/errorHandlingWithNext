@@ -9,10 +9,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  throw new Error("erro layout root");
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-full bg-red-500 text-white">Layout da home</div>
+        <div className="w-full h-5 text-center bg-red-500 text-white">
+          Layout da home
+        </div>
         {children}
       </body>
     </html>
